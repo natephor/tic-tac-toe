@@ -10,7 +10,6 @@ public static class UserInterface
         {
             Console.Write($"Player {player.Symbol} make your move: ");
             input = Console.ReadLine();
-
         } while (!int.TryParse(input, out move) && move is < 1 or > 9);
 
         return move - 1;
